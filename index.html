@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">Easy<span>Learn</span></h2>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active"><span>📊</span> Dashboard</a></li>
+                    <li><a href="students.html"><span>👨‍🎓</span> Students</a></li>
+                    <li><a href="#"><span>📚</span> Courses</a></li>
+                    <li><a href="#"><span>📈</span> Analysis</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <input type="text" class="search-bar" placeholder="Search...">
+                <div class="user-controls">
+                    <span>🔔</span>
+                    <span>👤</span>
+                </div>
+            </header>
+            <section class="dashboard">
+                <div class="cards" id="cards"></div>
+                <h2>Featured Courses</h2>
+                <div class="courses" id="courses"></div>
+            </section>
+            <h2>Student Analytics</h2>
+            <section class="statistics" id="statistics"></section>
+            <div class="charts">
+                <canvas id="accuracyChart" style="max-height: 300px;"></canvas>
+                <canvas id="dropoutChart" style="max-height: 300px; margin-top: 20px;"></canvas>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

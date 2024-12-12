@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">Easy<span>Learn</span></h2>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html"><span>📊</span> Dashboard</a></li>
+                    <li><a href="students.html" class="active"><span>👨‍🎓</span> Students</a></li>
+                    <li><a href="#"><span>📚</span> Courses</a></li>
+                    <li><a href="#"><span>📈</span> Analysis</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <input type="text" class="search-bar" placeholder="Search students...">
+                <div class="user-controls">
+                    <span>🔔</span>
+                    <span>👤</span>
+                </div>
+            </header>
+            <section>
+                <h2>Student List</h2>
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Education</th>
+                            <th>Birth</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dữ liệu sinh viên sẽ được thêm động -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="students.js"></script>
+</body>
+</html>
